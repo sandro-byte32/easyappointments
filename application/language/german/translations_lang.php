@@ -485,4 +485,6 @@ $lang['fields'] = 'Fields';
 $lang['invalid_credentials_provided'] = 'Invalid credentials provided, please try again.';
 $lang['calendar_url'] = 'Calendar URL';
 $lang['please_select'] = 'Bitte Wählen';
+$lang['auto_select_single_provider'] = 'Einzelnen Anbieter automatisch auswählen';
+$lang['auto_select_single_provider_hint'] = 'Automatisch den Anbieter auswählen, wenn nur einer für den gewählten Service verfügbar ist.';
 // End

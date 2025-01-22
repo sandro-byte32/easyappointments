@@ -260,6 +260,7 @@ class Booking extends EA_Controller
             'first_weekday' => $first_weekday,
             'display_cookie_notice' => $display_cookie_notice,
             'display_any_provider' => setting('display_any_provider'),
+            'auto_select_single_provider' => setting('auto_select_single_provider'),
             'future_booking_limit' => setting('future_booking_limit'),
             'appointment_data' => $appointment,
             'provider_data' => $provider,
@@ -446,9 +447,7 @@ class Booking extends EA_Controller
 
             $appointment_id = $this->appointments_model->save($appointment);
             $appointment = $this->appointments_model->find($appointment_id);
-
             $company_color = setting('company_color');
-
             $settings = [
                 'company_name' => setting('company_name'),
                 'company_link' => setting('company_link'),
